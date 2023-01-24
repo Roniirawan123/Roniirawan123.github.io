@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+    <style>
+    
+    
+      button{
+    background-color: #4CAF50; /* warna latar dasar */
+    color: white; /* warna teks */
+    padding: 14px 20px; /* padding */
+    margin: 300px 80px; /* margin */
+    border: none; /* tanpa border */
+    cursor: pointer; /* pointer cursor */
+    width: 50%; /* lebar penuh */
+    text-align: center;
+}
+
+button:hover {
+    background-color: #3e8e41; /* ubah warna latar dasar ketika di-hover */
+}
+button:active {
+    background-color: #3e8e41; /* ubah warna latar dasar ketika ditekan */
+}
+button:focus {
+    background-color: #3e8e41; /* ubah warna latar dasar ketika fokus */
+    outline: none; /* hilangkan garis fokus */
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 14px; /* ukuran font lebih kecil */
+  }
+}
+
+
+    </style>
+
+</head>
+<body>
+
+<button id="myButton" style="text-aligtn">Klik Sayang</button>
+
+
+<script>
+  
+  let button = document.getElementById("myButton");
+button.addEventListener("click", function(){
+  alert("Hanya Ini Yg Bisa Aku Kasih")
+  window.location.href = "index2.html";
+});
+
+  
+</script>
+</body>
+</html>
